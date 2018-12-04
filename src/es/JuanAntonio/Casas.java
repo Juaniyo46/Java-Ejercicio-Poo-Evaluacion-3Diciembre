@@ -1,11 +1,13 @@
 package es.JuanAntonio;
 
+//Se crea una clase y se le añade los atributos indicados
 public class Casas {
     protected String address;
     protected int postalCode;
     protected int population;
     protected int squareMeter;
 
+    //Se crea el contructor con todos los atributos
     public Casas(String address, int postalCode, int population, int squareMeter) {
         this.address = address;
         this.postalCode = postalCode;
@@ -13,6 +15,7 @@ public class Casas {
         this.squareMeter = squareMeter;
     }
 
+    //Se añaden los getters y los setters de todos los atributos
     public String getAddress() {
         return address;
     }
@@ -44,6 +47,8 @@ public class Casas {
     public void setSquareMeter(int squareMeter) {
         this.squareMeter = squareMeter;
     }
+
+    //Creamos el toString de todos los atributos
 
     @Override
     public String toString() {
